@@ -13,7 +13,7 @@ class LoginPage {
         this.constitle = page.locator('[data-cy=consignment-heading]');
         this.url = "https://envd.integritysystems.com.au/";
         this.username = "lpa.user1@yopmail.com";
-        this.password = "Test@1234";
+        this.password = "Test@1234Test";
     }
 
     async gotoenvdurl() {
