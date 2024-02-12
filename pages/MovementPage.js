@@ -4,7 +4,7 @@ class MovementPage {
     constructor(page) {
         this.title = page.locator('.title-section h1');
         this.transportedto = page.locator('input[placeholder="Search by PIC, town, or company name"]');
-        this.dropitem = page.locator('.Dropdown--Title');
+        this.dropitem = page.locator('.Dropdown--Title').getByText('G BASHA');
         this.movementdate = page.locator('input[placeholder="dd/mm/yyyy"]');
         this.dategrid = page.locator('.nice-dates-grid_container');
         this.today = page.locator('.nice-dates-day.-today');

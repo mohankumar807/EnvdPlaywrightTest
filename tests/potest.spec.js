@@ -27,6 +27,9 @@ test('TC1- Cattle Consignment', async ({ page }) => {
     //Livestock page
     const livestockflow = pomanager.getlivestockflow();
     await livestockflow.livestockcattle();
+    //History Page
+    const historyflow = pomanager.gethistoryflow();
+    await historyflow.historycattle();
     //page pause
     await page.pause();
 });

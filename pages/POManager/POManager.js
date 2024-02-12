@@ -10,6 +10,8 @@ const { FormsPage } = require('../FormsPage');
 const { FormsFlow } = require('../../flows/FormsFlow');
 const { LivestockPage } = require('../LivestockPage');
 const { LivestockFlow } = require('../../flows/LivestockFlow');
+const { HistoryPage } = require('../HistoryPage');
+const { HistoryFlow } = require('../../flows/HistoryFlow');
 
 
 class POManager {
@@ -26,6 +28,8 @@ class POManager {
         this.formsflow = new FormsFlow(page);
         this.livestockpage = new LivestockPage(page);
         this.livestockflow = new LivestockFlow(page);
+        this.historypage = new HistoryPage(page);
+        this.historyflow = new HistoryFlow(page);
     }
     //login
     getloginpage() {
@@ -66,7 +70,13 @@ class POManager {
     getlivestockflow() {
         return this.livestockflow;
     }
-
+    //history
+    gethistorypage() {
+        return this.historypage;
+    }
+    gethistoryflow() {
+        return this.historyflow;
+    }
 }
 //export class
 module.exports = { POManager };
