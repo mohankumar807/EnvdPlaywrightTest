@@ -27,8 +27,8 @@ class LivestockFlow {
         await this.livestockpage.enternoofheads();
         await this.livestockpage.enterbreed();
         await this.livestockpage.entersexsheeplamb();
-        await this.livestockpage.enteryearborn();
-        await this.livestockpage.entermonthofsheering();
+        await this.livestockpage.enteryearborn();//sheep specific
+        await this.livestockpage.entermonthofsheering();//sheep specific
         await this.livestockpage.enterbrand();
         await this.livestockpage.enternlistag();
         await this.livestockpage.clickaddbtn();
