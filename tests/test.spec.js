@@ -19,7 +19,7 @@ test.describe('Consignment Tests', async () => {
     test('TC1- Cattle Consignment', async ({ page }) => {
         const cattleconsignments = new POManager(page);
         await cattleconsignments.getselectspeciespage().gotoformspage();
-        await cattleconsignments.getformsflow().formse2ecattle();
+        await cattleconsignments.getformsflow().formscattlefill();
         await cattleconsignments.getlivestockflow().livestockcattle();//consignmentid
         await cattleconsignments.gethistoryflow().historycattle();
 
@@ -29,7 +29,7 @@ test.describe('Consignment Tests', async () => {
         const sheepconsignment = new POManager(page);
         await sheepconsignment.getselectspeciespage().selectspeciessheeplamb();
         await sheepconsignment.getselectspeciespage().gotoformspage();
-        await sheepconsignment.getformsflow().formse2esheeplamb();
+        await sheepconsignment.getformsflow().formssheeplambfill();
         await sheepconsignment.getlivestockflow().livestocksheeplamb();//consignmentid
     });
 
