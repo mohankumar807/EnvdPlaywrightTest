@@ -7,7 +7,7 @@ class MovementFlow {
         this.page = page;
         this.movementpage = new MovementPage(page);
     }
-    async movemente2e() {
+    async movementfill() {
         await this.movementpage.entertransporttopic();
         await this.movementpage.entermovementdate();
         await this.movementpage.entermovementtime();

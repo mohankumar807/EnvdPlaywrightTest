@@ -5,31 +5,14 @@ const { POManager } = require('../pages/POManager/POManager');
 test('TC1- Cattle Consignment', async ({ page }) => {
 
     const pomanager = new POManager(page);
-    //Login to envd website
-    const logintoenvd = pomanager.getloginflow();
-    await logintoenvd.loginflow();
-    //Homepage
-    const homepage = pomanager.gethomepage();
-    await homepage.gotocreatefromscratchpage();
-    //Create from scratch page
-    const fromscratchpage = pomanager.getfromscratchpage();
-    await fromscratchpage.gotomovementpage();
-    //Movement Page
-    const movementpage = pomanager.getmovementflow();
-    await movementpage.movemente2e();
-    //Select species page
-    const selectspeciespage = pomanager.getselectspeciespage();
-    //go to nextpage - cattle default
-    await selectspeciespage.gotoformspage();
-    //Select forms page
-    const formsflow = pomanager.getformsflow();
-    await formsflow.formse2ecattle();
-    //Livestock page
-    const livestockflow = pomanager.getlivestockflow();
-    await livestockflow.livestockcattle();
-    //History Page
-    const historyflow = pomanager.gethistoryflow();
-    await historyflow.historycattle();
+    await pomanager.getloginflow().loginflow();
+    await pomanager.gethomepage().gotocreatefromscratchpage();
+    await pomanager.getfromscratchpage().gotomovementpage();
+    await pomanager.getmovementflow().movementfill();
+    await pomanager.getselectspeciespage().gotoformspage();
+    await pomanager.getformsflow().formse2ecattle();
+    await pomanager.getlivestockflow().livestockcattle();
+    await pomanager.gethistoryflow().historycattle();
     //page pause
     await page.pause();
 });
@@ -37,28 +20,15 @@ test('TC1- Cattle Consignment', async ({ page }) => {
 test('TC2- SheepLamb', async ({ page }) => {
 
     const pomanager = new POManager(page);
-    //Login to envd website
-    const logintoenvd = pomanager.getloginflow();
-    await logintoenvd.loginflow();
-    //Homepage
-    const homepage = pomanager.gethomepage();
-    await homepage.gotocreatefromscratchpage();
-    //Create from scratch page
-    const fromscratchpage = pomanager.getfromscratchpage();
-    await fromscratchpage.gotomovementpage();
-    //Movement Page
-    const movementpage = pomanager.getmovementflow();
-    await movementpage.movemente2e();
+    await pomanager.getloginflow().loginflow();
+    await pomanager.gethomepage().gotocreatefromscratchpage();
+    await pomanager.getfromscratchpage().gotomovementpage();
+    await pomanager.getmovementflow().movementfill();
     //Select species page - sheep/lamb
-    const selectspeciespage = pomanager.getselectspeciespage();
-    await selectspeciespage.selectspeciessheeplamb();
-    await selectspeciespage.gotoformspage();
-    //Select forms page
-    const formsflow = pomanager.getformsflow();
-    await formsflow.formse2esheeplamb();
-    //Livestock page
-    const livestockflow = pomanager.getlivestockflow();
-    await livestockflow.livestocksheeplamb();
+    await pomanager.getselectspeciespage().selectspeciessheeplamb();
+    await pomanager.getselectspeciespage().gotoformspage();
+    await pomanager.getformsflow().formse2esheeplamb();
+    await pomanager.getlivestockflow().livestocksheeplamb();
     //page pause
     await page.pause();
 });
