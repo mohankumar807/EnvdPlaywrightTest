@@ -1,4 +1,6 @@
 const { expect } = require('@playwright/test');
+const faker = require('faker');
+const Faker = require('faker/lib');
 class LivestockPage {
 
     constructor(page) {
@@ -14,7 +16,7 @@ class LivestockPage {
         this.brandinfo = page.locator('div[data-cy="8"] input[type="text"]');
         this.electronictags = page.locator('div[data-cy="15"] input[type="text"]');
         this.rumentags = page.locator('div[data-cy="16"] input[type="text"]');
-        this.addbutton = page.locator('[type="submit"]');
+        this.addbutton = page.locator('.Button--Small').getByText('Add', { exact: true });
         this.nextpage = page.getByRole('button', { name: 'Next' })
         //sheeplamb
         this.mixed = page.getByText('Mixed');
@@ -23,6 +25,7 @@ class LivestockPage {
         this.maymonth = page.locator('.Popover--Content').getByText('May');
     }
 
+    //consignmentid
     async livestockassertions() {
         await expect(this.status).toHaveText("Draft");
         const consgignmentid = await this.page.locator('.jsx-3833991151.bold').first().textContent();
@@ -36,15 +39,16 @@ class LivestockPage {
         await expect(this.title).toContainText(livestocktitle);
     }
 
-    //cattle
     async enternoofheads() {
-        await this.heads.fill('99');
+        //faker datatype number returns number
+        let randomheads = faker.datatype.number({ min: 10, max: 99 }).toString();
+        await this.heads.fill(randomheads);
     }
 
     async enterbreed() {
         await this.breed.fill('Test Breed');
     }
-
+    //cattle
     async entersexcattle() {
         await this.selectsexdropdown.click();
         await this.calves.click();
@@ -56,10 +60,14 @@ class LivestockPage {
     }
 
     async enternlistag() {
-        await this.electronictags.fill('55');
+        //faker datatype number returns number
+        let randomnlistags = faker.datatype.number({ min: 10, max: 99 }).toString();
+        await this.electronictags.fill(randomnlistags);
     }
     async enternrumentag() {
-        await this.rumentags.fill('44');
+        //faker datatype number returns number
+        let randomrumentags = faker.datatype.number({ min: 10, max: 99 }).toString();
+        await this.rumentags.fill(randomrumentags);
     }
 
     async clickaddbtn() {

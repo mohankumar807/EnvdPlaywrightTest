@@ -9,9 +9,9 @@ class LivestockFlow {
     }
 
     async livestockcattle() {
-        await this.livestockpage.livestockassertions();
+        await this.livestockpage.livestockassertions();//consignmentid
         await this.livestockpage.clickonaddlivestockbtn();
-        await this.livestockpage.enternoofheads();
+        await this.livestockpage.enternoofheads();//faker
         await this.livestockpage.enterbreed();
         await this.livestockpage.entersexcattle();
         await this.livestockpage.enterbrand();
@@ -22,9 +22,9 @@ class LivestockFlow {
     }
 
     async livestocksheeplamb() {
-        await this.livestockpage.livestockassertions();
+        await this.livestockpage.livestockassertions();//consignmentid
         await this.livestockpage.clickonaddlivestockbtn();
-        await this.livestockpage.enternoofheads();
+        await this.livestockpage.enternoofheads();//faker
         await this.livestockpage.enterbreed();
         await this.livestockpage.entersexsheeplamb();
         await this.livestockpage.enteryearborn();//sheep specific
