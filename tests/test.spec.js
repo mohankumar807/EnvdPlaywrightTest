@@ -4,7 +4,7 @@ const { POManager } = require('../pages/POManager/POManager');
 
 
 test.describe('Consignment Tests', async () => {
-    //annotation to let vscode know that pomanager is instance of POManager class
+    //annotation to let vscode know that consignments is instance of POManager class
     /** @type { POManager }*/
     let consignments;
 
