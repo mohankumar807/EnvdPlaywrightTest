@@ -1,7 +1,5 @@
 const { test } = require('@playwright/test');
-//import POManager instead of indivdual classes
 const { POManager } = require('../pages/POManager/POManager');
-
 
 test.describe('Consignment Tests', async () => {
     //annotation to let vscode know that consignments is instance of POManager class
