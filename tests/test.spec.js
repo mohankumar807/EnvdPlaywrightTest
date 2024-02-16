@@ -21,6 +21,9 @@ test.describe('Consignment Tests', async () => {
         await consignments.getformsflow().formscattlefill();
         await consignments.getlivestockflow().livestockcattle();//consignmentid
         await consignments.gethistoryflow().historycattle();
+        await consignments.getdeclarationpage().gotodeclarationtab();
+        await consignments.getdeclarationpage().signdeclaration();
+        await page.pause();
     });
 
     test('TC2- SheepLamb Consignment', async ({ page }) => {

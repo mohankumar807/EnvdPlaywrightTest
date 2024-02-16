@@ -12,6 +12,7 @@ const { LivestockPage } = require('../LivestockPage');
 const { LivestockFlow } = require('../../flows/LivestockFlow');
 const { HistoryPage } = require('../HistoryPage');
 const { HistoryFlow } = require('../../flows/HistoryFlow');
+const { DeclarationPage } = require('../DeclarationPage');
 
 
 class POManager {
@@ -30,6 +31,7 @@ class POManager {
         this.livestockflow = new LivestockFlow(page);
         this.historypage = new HistoryPage(page);
         this.historyflow = new HistoryFlow(page);
+        this.declarationpage = new DeclarationPage(page);
     }
     //login
     getloginpage() {
@@ -76,6 +78,10 @@ class POManager {
     }
     gethistoryflow() {
         return this.historyflow;
+    }
+    //declaration
+    getdeclarationpage() {
+        return this.declarationpage;
     }
 }
 //export class
