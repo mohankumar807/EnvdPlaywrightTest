@@ -17,23 +17,21 @@ test.describe('Consignment Tests', async () => {
     });
 
     test('TC1- Cattle Consignment', async ({ page }) => {
-        const cattleconsignments = new POManager(page);
-        await cattleconsignments.getselectspeciespage().gotoformspage();
-        await cattleconsignments.getformsflow().formscattlefill();
-        await cattleconsignments.getlivestockflow().livestockcattle();//consignmentid
-        await cattleconsignments.gethistoryflow().historycattle();
+        await consignments.getselectspeciespage().gotoformspage();
+        await consignments.getformsflow().formscattlefill();
+        await consignments.getlivestockflow().livestockcattle();//consignmentid
+        await consignments.gethistoryflow().historycattle();
 
     });
 
     test('TC2- SheepLamb Consignment', async ({ page }) => {
-        const sheepconsignment = new POManager(page);
-        await sheepconsignment.getselectspeciespage().selectspeciessheeplamb();
-        await sheepconsignment.getselectspeciespage().gotoformspage();
-        await sheepconsignment.getformsflow().formssheeplambfill();
-        await sheepconsignment.getlivestockflow().livestocksheeplamb();//consignmentid
+        await consignments.getselectspeciespage().selectspeciessheeplamb();
+        await consignments.getselectspeciespage().gotoformspage();
+        await consignments.getformsflow().formssheeplambfill();
+        await consignments.getlivestockflow().livestocksheeplamb();//consignmentid
     });
 
     test.afterEach(async ({ page }) => {
-        // await page.pause();
+        await page.pause();
     });
 });
