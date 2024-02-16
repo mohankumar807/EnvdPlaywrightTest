@@ -8,12 +8,12 @@ class SelectSpeciesPage {
         this.sheeplamddropdown = page.getByText('Sheep/Lamb');
     }
 
-    async selectspeciessheeplamb() {
+    async selectSpeciesSheepLamb() {
         await this.dropdownoption.click();
         await this.sheeplamddropdown.click();
     }
 
-    async gotoformspage() {
+    async gotoFormsPage() {
         await this.nextpage.click();
         //assert if on forms page
         await expect(this.title).toHaveText("Select Forms");

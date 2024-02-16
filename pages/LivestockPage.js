@@ -1,10 +1,12 @@
 const { expect } = require('@playwright/test');
 const faker = require('faker');
-const Faker = require('faker/lib');
+const { CommonPage } = require('./POManager/CommonPage');
+
 class LivestockPage {
 
     constructor(page) {
         this.page = page;
+        this.commonpage = new CommonPage(page);
         this.status = page.locator('.Tag');
         this.addlivestock = page.getByText('Add livestock description');
         this.title = page.locator('h3.jsx-2797809347');
@@ -16,8 +18,6 @@ class LivestockPage {
         this.brandinfo = page.locator('div[data-cy="8"] input[type="text"]');
         this.electronictags = page.locator('div[data-cy="15"] input[type="text"]');
         this.rumentags = page.locator('div[data-cy="16"] input[type="text"]');
-        this.addbutton = page.locator('.Button--Small').getByText('Add', { exact: true });
-        this.nextpage = page.getByRole('button', { name: 'Next' })
         //sheeplamb
         this.mixed = page.getByText('Mixed');
         this.yearborn = page.locator('[data-cy="6"] input[type="text"]');
@@ -71,11 +71,11 @@ class LivestockPage {
     }
 
     async clickaddbtn() {
-        await this.addbutton.click();
+        await this.commonpage.addbutton.click();
     }
 
     async gotonextpage() {
-        await this.nextpage.click();
+        await this.commonpage.nextpage.click();
     }
 
     //sheeplamb

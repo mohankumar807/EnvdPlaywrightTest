@@ -1,8 +1,10 @@
 const { expect } = require('@playwright/test');
+const {CommonPage} = require('./POManager/CommonPage');
 class HistoryPage {
 
     constructor(page) {
         this.page = page;
+        this.commonpage = new CommonPage(page);
         this.q17 = page.locator('div[data-cy="17"]').getByText('No');
         this.q17child = page.locator('div[data-cy="17"]').getByText('Please select');
         this.q17childans = page.getByText('6 - 12 Months');
@@ -17,7 +19,6 @@ class HistoryPage {
         this.q79 = page.locator('div[data-cy="79"]').getByText('No');
         this.q83 = page.locator('div[data-cy="83"]').getByText('No');
         this.q85 = page.locator('div[data-cy="85"]').getByText('No');
-        this.nextpage = page.getByRole('button', { name: 'Next' })
         //sheeplamb
 
     }
@@ -64,7 +65,7 @@ class HistoryPage {
         await this.q85.click();
     }
     async gotofoodsafetypage() {
-        await this.nextpage.click();
+        await this.commonpage.nextpage.click();
     }
     //sheeplamb
 

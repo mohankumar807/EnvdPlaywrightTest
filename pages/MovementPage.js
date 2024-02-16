@@ -1,7 +1,10 @@
 const { expect } = require('@playwright/test');
+const { CommonPage } = require('./POManager/CommonPage');
+
 class MovementPage {
 
     constructor(page) {
+        this.commonpage = new CommonPage(page);
         this.title = page.locator('.title-section h1');
         this.transportedto = page.locator('input[placeholder="Search by PIC, town, or company name"]');
         this.dropitem = page.locator('.Dropdown--Title').getByText('G BASHA');
@@ -14,8 +17,6 @@ class MovementPage {
         this.sixhours = page.locator('[data-idx="6"]').nth(0);
         this.thirtyminutes = page.locator('[data-idx="6"]').nth(1);
         this.pm = page.locator('[data-idx="2"]').nth(1);
-        this.nextpage = page.getByText('Next step');
-
     }
 
     async entertransporttopic() {
@@ -47,8 +48,8 @@ class MovementPage {
         await this.pm.click();
     }
 
-    async gotonextpage() {
-        await this.nextpage.click();
+    async gotonextstep() {
+        await this.commonpage.nextstep.click();
         //assert if on livestock page        
         await expect(this.title).toHaveText("Select species");
     }

@@ -7,7 +7,7 @@ class LoginFlow {
         this.page = page;
         this.loginpage = new LoginPage(page);
     }
-    async loginflow() {
+    async loginFlow() {
         await this.loginpage.gotoenvdurl();
         await this.loginpage.logintoenvd();
     }

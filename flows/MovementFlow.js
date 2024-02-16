@@ -7,11 +7,11 @@ class MovementFlow {
         this.page = page;
         this.movementpage = new MovementPage(page);
     }
-    async movementfill() {
+    async fillMovementDetails() {
         await this.movementpage.entertransporttopic();
         await this.movementpage.entermovementdate();
         await this.movementpage.entermovementtime();
-        await this.movementpage.gotonextpage();
+        await this.movementpage.gotonextstep();
     }
 }
 

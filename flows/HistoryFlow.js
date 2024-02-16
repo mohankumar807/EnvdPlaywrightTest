@@ -7,7 +7,7 @@ class HistoryFlow {
         this.page = page;
         this.HistoryPage = new HistoryPage(page);
     }
-    async historycattle() {
+    async fillCattleHistory() {
         await this.HistoryPage.answerq17();
         await this.HistoryPage.answerq25();
         await this.HistoryPage.answerq26();
@@ -22,10 +22,6 @@ class HistoryFlow {
         await this.HistoryPage.answerq85();
         await this.HistoryPage.gotofoodsafetypage();
     }
-
-    // async historye2esheeplamb() {
-    //    
-    // }
 }
 
 module.exports = { HistoryFlow };

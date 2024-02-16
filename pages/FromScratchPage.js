@@ -7,7 +7,7 @@ class FromScratchPage {
         this.createsfromscratch = page.locator("button[data-cy='create-scrach']");
     }
 
-    async gotomovementpage() {
+    async gotoMovementPage() {
         await this.createsfromscratch.click();
         //assert if on movements page
         await expect(this.title).toHaveText("Movement information");

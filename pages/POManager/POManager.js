@@ -13,7 +13,7 @@ const { LivestockFlow } = require('../../flows/LivestockFlow');
 const { HistoryPage } = require('../HistoryPage');
 const { HistoryFlow } = require('../../flows/HistoryFlow');
 const { DeclarationPage } = require('../DeclarationPage');
-
+const { DeclarationFlow } = require('../../flows/DeclarationFlow');
 
 class POManager {
 
@@ -32,56 +32,60 @@ class POManager {
         this.historypage = new HistoryPage(page);
         this.historyflow = new HistoryFlow(page);
         this.declarationpage = new DeclarationPage(page);
+        this.declarationflow = new DeclarationFlow(page);
     }
     //login
-    getloginpage() {
+    getLoginPage() {
         return this.loginpage;
     }
-    getloginflow() {
+    getLoginFlow() {
         return this.loginflow;
     }
     //homepage
-    gethomepage() {
+    getHomePage() {
         return this.homepage;
     }
-    getfromscratchpage() {
+    getFromScratchPage() {
         return this.fromscratchpage;
     }
     //Movement
-    getmovementpage() {
+    getMovementPage() {
         return this.movementpage;
     }
-    getmovementflow() {
+    getMovementFlow() {
         return this.movementflow;
     }
     //species
-    getselectspeciespage() {
+    getSelectSpeciesPage() {
         return this.selectspeciespage;
     }
     //Forms
-    getformspage() {
+    getFormsPage() {
         return this.formspage;
     }
-    getformsflow() {
+    getFormsFlow() {
         return this.formsflow;
     }
     //livestock
-    getlivestockpage() {
+    getLivestockPage() {
         return this.livestockpage;
     }
-    getlivestockflow() {
+    getLivestockFlow() {
         return this.livestockflow;
     }
     //history
-    gethistorypage() {
+    getHistoryPage() {
         return this.historypage;
     }
-    gethistoryflow() {
+    getHistoryFlow() {
         return this.historyflow;
     }
     //declaration
-    getdeclarationpage() {
+    getDeclarationPage() {
         return this.declarationpage;
+    }
+    getDeclarationFlow() {
+        return this.declarationflow;
     }
 }
 //export class

@@ -8,7 +8,7 @@ class LivestockFlow {
         this.livestockpage = new LivestockPage(page);
     }
 
-    async livestockcattle() {
+    async fillCattleLivestock() {
         await this.livestockpage.livestockassertions();//consignmentid
         await this.livestockpage.clickonaddlivestockbtn();
         await this.livestockpage.enternoofheads();//faker
@@ -21,7 +21,7 @@ class LivestockFlow {
         await this.livestockpage.gotonextpage();
     }
 
-    async livestocksheeplamb() {
+    async fillSheepLivestock() {
         await this.livestockpage.livestockassertions();//consignmentid
         await this.livestockpage.clickonaddlivestockbtn();
         await this.livestockpage.enternoofheads();//faker

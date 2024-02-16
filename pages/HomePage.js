@@ -6,7 +6,7 @@ class HomePage {
         this.title = page.locator('.title-section h1');
     }
 
-    async gotocreatefromscratchpage() {
+    async gotoCreateFromScratchPage() {
         await this.createconsbtn.click();
         //assert if on nextpage
         await expect(this.title).toHaveText("What would you like to do?");
