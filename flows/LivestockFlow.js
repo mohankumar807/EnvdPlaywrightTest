@@ -1,10 +1,13 @@
 const { expect } = require('@playwright/test');
 const { LivestockPage } = require('../pages/LivestockPage');
+const { CommonPage } = require('../pages/POManager/CommonPage');
+
 
 class LivestockFlow {
 
     constructor(page) {
         this.page = page;
+        this.commonpage = new CommonPage(page);
         this.livestockpage = new LivestockPage(page);
     }
 
@@ -17,8 +20,8 @@ class LivestockFlow {
         await this.livestockpage.enterbrand();
         await this.livestockpage.enternlistag();
         await this.livestockpage.enternrumentag();
-        await this.livestockpage.clickaddbtn();
-        await this.livestockpage.gotonextpage();
+        await this.commonpage.clickAddButton();
+        await this.commonpage.gotoNextPage();
     }
 
     async fillSheepLivestock() {
@@ -31,8 +34,8 @@ class LivestockFlow {
         await this.livestockpage.entermonthofsheering();//sheep specific
         await this.livestockpage.enterbrand();
         await this.livestockpage.enternlistag();
-        await this.livestockpage.clickaddbtn();
-        await this.livestockpage.gotonextpage();
+        await this.commonpage.clickAddButton();
+        await this.commonpage.gotoNextPage();
     }
 }
 

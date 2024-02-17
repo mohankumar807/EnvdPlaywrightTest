@@ -14,7 +14,7 @@ test.describe('Consignment Tests', async () => {
         await consignments.getMovementFlow().fillMovementDetails();
     });
 
-    test('TC1- Cattle Consignment', async ({ page }) => {
+    test('TC1- Cattle Consignment', async ({ }) => {
         await consignments.getSelectSpeciesPage().gotoFormsPage();
         await consignments.getFormsFlow().fillCattleForms();
         await consignments.getLivestockFlow().fillCattleLivestock();//consignmentid
@@ -22,11 +22,25 @@ test.describe('Consignment Tests', async () => {
         await consignments.getDeclarationFlow().fillDelcarationPage();
     });
 
-    test('TC2- SheepLamb Consignment', async ({ page }) => {
+    test('TC2- SheepLamb Consignment', async ({ }) => {
         await consignments.getSelectSpeciesPage().selectSpeciesSheepLamb();
         await consignments.getSelectSpeciesPage().gotoFormsPage();
         await consignments.getFormsFlow().fillsheepforms();
         await consignments.getLivestockFlow().fillSheepLivestock();//consignmentid
+    });
+
+    test('TC3- SheepLamb Consignment', async ({ }) => {
+        await consignments.getSelectSpeciesPage().selectSpeciesSheepLamb();
+        await consignments.getSelectSpeciesPage().gotoFormsPage();
+        await consignments.getFormsFlow().fillsheepforms();
+        await consignments.getLivestockFlow().fillSheepLivestock();//consignmentid
+    });
+    test('TC4- Cattle Consignment', async ({ }) => {
+        await consignments.getSelectSpeciesPage().gotoFormsPage();
+        await consignments.getFormsFlow().fillCattleForms();
+        await consignments.getLivestockFlow().fillCattleLivestock();//consignmentid
+        await consignments.getHistoryFlow().fillCattleHistory();
+        await consignments.getDeclarationFlow().fillDelcarationPage();
     });
 
     test.afterEach(async ({ page }) => {

@@ -70,14 +70,6 @@ class LivestockPage {
         await this.rumentags.fill(randomrumentags);
     }
 
-    async clickaddbtn() {
-        await this.commonpage.addbutton.click();
-    }
-
-    async gotonextpage() {
-        await this.commonpage.nextpage.click();
-    }
-
     //sheeplamb
     async entersexsheeplamb() {
         await this.selectsexdropdown.click();

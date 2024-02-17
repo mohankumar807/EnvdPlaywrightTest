@@ -5,6 +5,7 @@ const { CommonPage } = require('./POManager/CommonPage')
 class DeclarationPage {
 
     constructor(page) {
+        this.page = page;
         this.commonpage = new CommonPage(page);
         this.declarationtab = page.locator('.tabbar-item').getByText('Declaration', { exact: true });
         this.sign = page.locator('[type="button"]').getByText('Sign declaration', { exact: true });
@@ -13,8 +14,10 @@ class DeclarationPage {
         this.telephone = page.locator('[data-cy="declaration.phone"]');
         this.email = page.locator('[data-cy="declaration.email"]');
         this.declarationcheck = page.locator('.checkmark').nth(14);
-        this.submitprint = page.getByText('Submit & print', { exact: true });
-        this.confirmsubmit = page.locator('.jsx-1398544148 .Modal--Inner').getByRole('button', { name: 'Submit', exact: true })
+        this.submitprint = page.locator('[type="button"]').getByText("Submit & print", { exact: true });
+        this.modaltitle = page.locator('.jsx-1398544148 .Modal--Header');
+        this.confirmsubmit = page.locator('.Modal--Footer button[type="submit"]').getByText('Submit', { exact: true });
+        this.summarytitle = page.locator('h1[class="jsx-4082709580"]');
     }
 
     async gotodeclarationtab() {
@@ -45,7 +48,11 @@ class DeclarationPage {
 
     async clicksubmitprint() {
         await this.submitprint.click();
+        //assert popup
+        await expect(this.modaltitle).toHaveText("Are you sure you're ready to submit this consignment?");
         await this.confirmsubmit.click();
+        //assert submit action
+        await expect(this.summarytitle).toHaveText('Consignment summary');
     }
 }
 //export classname so it can be accessed from outside

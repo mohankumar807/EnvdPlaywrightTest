@@ -9,5 +9,13 @@ class CommonPage {
     async gotonextstep() {
         await this.nextstep.click();
     }
+
+    async clickAddButton() {
+        await this.addbutton.click();
+    }
+
+    async gotoNextPage() {
+        await this.nextpage.click();
+    }
 }
 module.exports = { CommonPage };
