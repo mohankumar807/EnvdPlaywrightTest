@@ -1,0 +1,397 @@
+{
+  "cookies": [
+    {
+      "name": "_ga",
+      "value": "GA1.1.1112732640.1708175787",
+      "domain": ".integritysystems.com.au",
+      "path": "/",
+      "expires": 1742735787.387898,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "did",
+      "value": "s%3Av0%3Ac27e0010-cd96-11ee-be1d-d57e0cd96cd2%3A695a1971df6f35a982c7a098a8cd403e957a7ff5655f43bab35e06d3aa6ad1db.0TV%2BzD7Xl7lbfFXWVrToyY5U90%2FBOiSyahTcFy3P7F8",
+      "domain": "sso.mla.com.au",
+      "path": "/",
+      "expires": 1739733389.172096,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "did_compat",
+      "value": "s%3Av0%3Ac27e0010-cd96-11ee-be1d-d57e0cd96cd2%3A695a1971df6f35a982c7a098a8cd403e957a7ff5655f43bab35e06d3aa6ad1db.0TV%2BzD7Xl7lbfFXWVrToyY5U90%2FBOiSyahTcFy3P7F8",
+      "domain": "sso.mla.com.au",
+      "path": "/",
+      "expires": 1739733389.172268,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "TiPMix",
+      "value": "36.13919778077042",
+      "domain": ".www.mla.com.au",
+      "path": "/",
+      "expires": 1708179389.828756,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "x-ms-routing-name",
+      "value": "self",
+      "domain": ".www.mla.com.au",
+      "path": "/",
+      "expires": 1708179389.828921,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ASP.NET_SessionId",
+      "value": "epfst53mbq1omtx1x2tg4nv5",
+      "domain": "www.mla.com.au",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "EPi_NumberOfVisits",
+      "value": "1,2024-02-17T13:16:30",
+      "domain": "www.mla.com.au",
+      "path": "/",
+      "expires": 1739798189.828983,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "myMLAState",
+      "value": "K6I4/Ug/C2wMvsi6eAYP6305kT3RkRaqh0h3fG8t7fcJnHLP3ffUV1Dd071s+/IgvZuBDqICN30CDEN9BuBbBWr25F4Y7ypBPvWHFEcuJbkjOfB+u4tZWO6V/5B4Vy91hB0YXw88kJ5NpLH0wGU8DK2LxA3foqX/mFBt1bpRS+b+g4EUUWaPhoFeqmrKXOb8iQoj3CwyerZvMR9Ln3r2YuChp7/obrohM8ZtDFmN5kSm0rOO8tPYsDKLoK/8gYeEPO5teUXWTWJ58jaWO+cKl5vkS39wYuZV61u7nX8QubPIl+yPKxL86b5NMexJf+uQAcgY31oijgBXwdyn4rHKrWPauO17YuHo87VoM8TxCrQJG/PuaWDNu+BwU+L178laIWSjPDN1zk6UlCHZQwXgb7pKtAf8/UVy/J0ARUFVEz3DxqpGUI9v7y8H8Q88ounjO5qLsuV2lvUQ/Hi5boRjmADyhGE/Z8pAacM6tYMch76YidKL7TxYTw==",
+      "domain": "www.mla.com.au",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ARRAffinity",
+      "value": "dd6858f6c5b3a396b31d1bce1f7f832ce9c5ea53ba76b93fe9bb5604b273b57c",
+      "domain": ".www.mla.com.au",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ARRAffinitySameSite",
+      "value": "dd6858f6c5b3a396b31d1bce1f7f832ce9c5ea53ba76b93fe9bb5604b273b57c",
+      "domain": ".www.mla.com.au",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "auth0",
+      "value": "s%3AmgiGnLNeT5WW4QamDE0usGBDmdIZrv3f.c6s%2BP%2BRJqvc%2FQtrirNgDpUqEkEaqVhYQm2bUOlMZ8zI",
+      "domain": "sso.mla.com.au",
+      "path": "/",
+      "expires": 1708435009.297447,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "auth0_compat",
+      "value": "s%3AmgiGnLNeT5WW4QamDE0usGBDmdIZrv3f.c6s%2BP%2BRJqvc%2FQtrirNgDpUqEkEaqVhYQm2bUOlMZ8zI",
+      "domain": "sso.mla.com.au",
+      "path": "/",
+      "expires": 1708435009.297656,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": ".myMLALogin",
+      "value": "44343CD52BC1BDC39587087868A76F4076F33DD10AA8F33A1F2E5B21584571CFDDE7B2278B2277D13F127539D3ED88F236AD9A3C1754A2404C0586FC19E814F97CCE93A0C17D27380099A32ADF5BEAE2377B4E80240E2BB652B20E6A2418E3358C68BF7C2ED1C94F916BABF79941C3BAA2F932E04EC8B47A1633418D58CA4C4BA10563103E5BBB45D8ECC8D99852B19AD5A9E9662A557911E7BA15B28EF46B80A77F13CB8DB51D50852E294021A0188A936A3B626962064847E9C76CCA39236011EF460C84D6BA50441B1E0D1DFBC6F9846283D1EF8FECD433E691D1C252C95F53E84C7E1CE4A3AADA925EB015C805B2",
+      "domain": ".mla.com.au",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "EPiSessionId",
+      "value": "cd695b6a-2f20-48af-9ba4-4fdf759ae84a",
+      "domain": "www.mla.com.au",
+      "path": "/",
+      "expires": 1708177608.7175,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_madid",
+      "value": "c06c8db4-1a2d-4a80-89d0-17de6d3a1622",
+      "domain": "www.mla.com.au",
+      "path": "/",
+      "expires": 1739711805.613745,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "livemonitorUserId",
+      "value": "3df0b37f-a84f-47b8-bd22-80e6bdce0269",
+      "domain": "www.mla.com.au",
+      "path": "/",
+      "expires": 1708179408.02409,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ai_user",
+      "value": "Hniap|2024-02-17T13:16:48.033Z",
+      "domain": "www.mla.com.au",
+      "path": "/",
+      "expires": 1739711808,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.3.1513429594.1708175808",
+      "domain": ".mla.com.au",
+      "path": "/",
+      "expires": 1742735808.755439,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_gid",
+      "value": "GA1.3.326626400.1708175808",
+      "domain": ".mla.com.au",
+      "path": "/",
+      "expires": 1708262208,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_gat",
+      "value": "1",
+      "domain": ".mla.com.au",
+      "path": "/",
+      "expires": 1708175868,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_hjSessionUser_1425844",
+      "value": "eyJpZCI6IjcxY2Y4ZTYyLThhMjEtNTIwMi04N2U4LTQzNTRiNGE1ZTA1MiIsImNyZWF0ZWQiOjE3MDgxNzU4MDgyOTksImV4aXN0aW5nIjpmYWxzZX0=",
+      "domain": ".mla.com.au",
+      "path": "/",
+      "expires": 1739711808,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_hjSession_1425844",
+      "value": "eyJpZCI6IjdiMGM3ZmVlLWRmZGEtNDY4OC05MTg4LTkyYmU1YTU5M2Y3MyIsImMiOjE3MDgxNzU4MDgzMDEsInMiOjAsInIiOjAsInNiIjowLCJzciI6MCwic2UiOjAsImZzIjoxLCJzcCI6MX0=",
+      "domain": ".mla.com.au",
+      "path": "/",
+      "expires": 1708177608,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ai_session",
+      "value": "vK4ha|1708175808638.5|1708175808638.5",
+      "domain": "www.mla.com.au",
+      "path": "/",
+      "expires": 1708177608,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "zaius_js_version",
+      "value": "2.4.1",
+      "domain": "www.mla.com.au",
+      "path": "/",
+      "expires": 1742735808.646679,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "vuid",
+      "value": "fae26551-dbd9-483c-8107-a5cbc9d2d15c%7C1708175808647",
+      "domain": "www.mla.com.au",
+      "path": "/",
+      "expires": 1742735808.647847,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "z_idsyncs",
+      "value": "",
+      "domain": "www.mla.com.au",
+      "path": "/",
+      "expires": 1742735808.649398,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "vtsrc",
+      "value": "source%3Dsso.mla.com.au%7Cmedium%3Dreferral",
+      "domain": "www.mla.com.au",
+      "path": "/",
+      "expires": 1713363408,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_gat_UA-5254922-1",
+      "value": "1",
+      "domain": ".mla.com.au",
+      "path": "/",
+      "expires": 1708175868,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "CLID",
+      "value": "5ab8c7b5ef8c4a1e8f90309cbcebbff2.20240217.20250216",
+      "domain": "www.clarity.ms",
+      "path": "/",
+      "expires": 1739711809.131501,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ASP.NET_SessionId",
+      "value": "p320txxtpwgg2kc2yfgg3gjy",
+      "domain": "lpa.nlis.com.au",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__RequestVerificationToken",
+      "value": "x_k8OJc-MKheTdNUZDw_5xE4aOqFYZnzHUqpz12RBD5N57oDXLtQwJdToMWPDAg0EP2T7OGbaVVYr3kkNS4ks00icpY1",
+      "domain": "lpa.nlis.com.au",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.1.2061057325.1708175811",
+      "domain": ".nlis.com.au",
+      "path": "/",
+      "expires": 1742735810.642217,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga_XMLX4XGY77",
+      "value": "GS1.1.1708175810.1.0.1708175810.60.0.0",
+      "domain": ".nlis.com.au",
+      "path": "/",
+      "expires": 1742735810.66749,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": ".AspNet.TwoFactorRememberBrowser",
+      "value": "87GjfACwod5OIDXxAtoRvhwKcMlosZp3goXqCCaCLk4Pu6ei3cRdc1Xl1oar-c3Uybki-9b5VUU0w5ynt9LgBil9yajgxLSF68nmleE0U99meRUlgoGFVoCrvJXlM8GvIkRhqUSsbn_c5UZ_eAFp6DBFEofXZnvCaHeca7uApmL6FiDbt_GLUqEGvMc-VrPdBK_jp7jPB1Wt_zakeuIkzXX3UGip93qcDKnJ1KHVIdTlPRKhcnU4tnENCEigoTPsFN36vbGZJCM4J6VHxIdZUPBPRuZgJjDE245OsaFeuvLmPlbzYkFyx2EXlQTr0cEY6ykxDmfCbAkiWAgjX_LRPPtByzc",
+      "domain": "lpa.nlis.com.au",
+      "path": "/",
+      "expires": 1709385411.527355,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": ".AspNet.ApplicationCookie",
+      "value": "1gGenRO08XG1u8-O-deFZp1J5R5k1T8Co0pGPNO7ip10H8V2aVgvD2sZXISgF7vYe-ahKWDXMEiyIdR7CD9_-x0J_eoZ5W0DOX7AxDYMdPiXT9IeKAo70qNbBFLMVirc7osGg_hw6OjZrIWB2M8qtBrQsPcFcFy2SJDuyE1YlGT4TR9YEAmfLhULRKRN3oa8iU8Y4aPfKkZYbU1xVpXa1hhoMMeehdAp6VJEMiN9LlJIDDrEFv7og6_SopNWkECDEaimPpuIkEB6mpApfSEKH29or6waPoWxKgmkD2FNh63X2tXHt7b6mpr3qh4g_NHOgkQd0ifcgIFLz6HK7FqNJDPe2DyK2PGeJpFQKT4Bd_DNMlwBhGev2pQ6EKNasWCl9C7WHhGcxNfHcFGX3fUhD-BCVLip7gckofFHDFVjDs7Hgrn5flvPL2DqMRgiu3zxnvxFomcbNVFoJZnnJgHpexkmxcI1iZ5z3_k27r5yAtbcGqH-_yrUxHk0RDLVpL5LWvMR_e88S8ImiWBu6dI6KJdflZmvZpcg8tDgxQLMvBS_kjgWz3PeFohKqYSygs21ixYPOMWD4rUcYXXsJLwdHBoB5pdE0KaXQvt3YpvQvbmy0008T0hBE46mN8vd4Pp-ofUxSA",
+      "domain": "lpa.nlis.com.au",
+      "path": "/",
+      "expires": 1709385411.527606,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga_9F972CTPCN",
+      "value": "GS1.1.1708175787.1.1.1708175811.36.0.0",
+      "domain": ".integritysystems.com.au",
+      "path": "/",
+      "expires": 1742735811.925985,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://envd.integritysystems.com.au",
+      "localStorage": [
+        {
+          "name": "NRBA_SESSION",
+          "value": "{\"value\":\"2e820ab06c6dcef5\",\"inactiveAt\":1708177612417,\"expiresAt\":1708190212417,\"updatedAt\":1708175813347,\"sessionReplayMode\":0,\"sessionReplaySentFirstChunk\":false,\"sessionTraceMode\":1,\"traceHarvestStarted\":true,\"custom\":{}}"
+        }
+      ]
+    },
+    {
+      "origin": "https://lpa.nlis.com.au",
+      "localStorage": [
+        {
+          "name": "NRBA_SESSION",
+          "value": "{\"value\":\"d9f61d6b1fa34772\",\"inactiveAt\":1708177588150,\"expiresAt\":1708190188074,\"updatedAt\":1708175788565,\"sessionReplayMode\":0,\"sessionReplaySentFirstChunk\":false,\"sessionTraceMode\":0,\"traceHarvestStarted\":false,\"custom\":{}}"
+        }
+      ]
+    },
+    {
+      "origin": "https://www.mla.com.au",
+      "localStorage": [
+        {
+          "name": "ai_session",
+          "value": "vK4ha|1708175808638.5|1708175808638.5"
+        },
+        {
+          "name": "zRVP",
+          "value": "{}"
+        }
+      ]
+    }
+  ]
+}
