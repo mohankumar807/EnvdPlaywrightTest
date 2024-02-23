@@ -15,7 +15,6 @@ test.describe('TS1- Consignment Tests', async () => {
     });
 
     test('TC1- Cattle Consignment', async ({ }) => {
-        test.setTimeout(120000);
         await consignments.getSelectSpeciesPage().gotoFormsPage();
         await consignments.getFormsFlow().fillCattleForms();
         await consignments.getLivestockFlow().fillCattleLivestock();//consignmentid
@@ -24,7 +23,6 @@ test.describe('TS1- Consignment Tests', async () => {
     });
 
     test('TC2- SheepLamb Consignment', async ({ }) => {
-        test.setTimeout(120000);
         await consignments.getSelectSpeciesPage().selectSpeciesSheepLamb();
         await consignments.getSelectSpeciesPage().gotoFormsPage();
         await consignments.getFormsFlow().fillsheepforms();
@@ -62,14 +60,6 @@ test.describe('TS2- Consignment Storage Session Test', async () => {
         await consignments.getHomePage().gotoCreateFromScratchPage();
         await consignments.getFromScratchPage().gotoMovementPage();
         await consignments.getMovementFlow().fillMovementDetails();
-    });
-
-    test('TC21- Cattle Storage Session', async () => {
-        // tests
-    });
-
-    test('TC22- SheepLamb Storage Session', async () => {
-        // tests
     });
 
     test.afterEach(async ({ page }) => {
