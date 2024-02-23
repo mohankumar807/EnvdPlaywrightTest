@@ -14,7 +14,7 @@ test.describe('TS1- Consignment Tests', async () => {
         await consignments.getMovementFlow().fillMovementDetails();
     });
 
-    test('TC1- Cattle Consignment', async ({ }) => {
+    test('TC1- Cattle Consignment', async () => {
         await consignments.getSelectSpeciesPage().gotoFormsPage();
         await consignments.getFormsFlow().fillCattleForms();
         await consignments.getLivestockFlow().fillCattleLivestock();//consignmentid
@@ -22,7 +22,7 @@ test.describe('TS1- Consignment Tests', async () => {
         await consignments.getDeclarationFlow().fillDelcarationPage();
     });
 
-    test('TC2- SheepLamb Consignment', async ({ }) => {
+    test('TC2- SheepLamb Consignment', async () => {
         await consignments.getSelectSpeciesPage().selectSpeciesSheepLamb();
         await consignments.getSelectSpeciesPage().gotoFormsPage();
         await consignments.getFormsFlow().fillsheepforms();
