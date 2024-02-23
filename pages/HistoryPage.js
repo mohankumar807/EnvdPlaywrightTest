@@ -1,5 +1,5 @@
 const { expect } = require('@playwright/test');
-const {CommonPage} = require('./POManager/CommonPage');
+const { CommonPage } = require('./POManager/CommonPage');
 class HistoryPage {
 
     constructor(page) {
@@ -67,8 +67,6 @@ class HistoryPage {
     async gotofoodsafetypage() {
         await this.commonpage.nextpage.click();
     }
-    //sheeplamb
-
 }
 //export classname so it can be accessed from outside
 module.exports = { HistoryPage };
